@@ -1,0 +1,10 @@
+{
+  "role": "evidence-record",
+  "required_courses": [
+    "record-1"
+  ],
+  "completion_records": [
+    "record-1"
+  ],
+  "review_date": "2026-10-03"
+}

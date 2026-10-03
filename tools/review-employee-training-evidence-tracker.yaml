@@ -1,0 +1,59 @@
+{
+  "name": "review-employee-training-evidence-tracker",
+  "description": "Run Employee Training Evidence Tracker",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "description": "role"
+          },
+          "required_courses": {
+            "type": "array",
+            "description": "required courses"
+          },
+          "completion_records": {
+            "type": "array",
+            "description": "completion records"
+          },
+          "review_date": {
+            "type": "string",
+            "description": "review date"
+          }
+        },
+        "required": [
+          "role",
+          "required_courses",
+          "completion_records",
+          "review_date"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-employee-training-evidence-tracker.py",
+    "runtime": "python3"
+  }
+}

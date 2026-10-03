@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: employee-training-evidence-tracker
+version: 0.1.0
+description: Check role training records against required courses and expiry dates.
+skills:
+  - employee-training-evidence-tracker-skill
+tools:
+  - review-employee-training-evidence-tracker
+tags:
+  - hr-recruiting
+  - evidence-driven

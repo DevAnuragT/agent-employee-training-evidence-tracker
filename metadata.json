@@ -1,0 +1,29 @@
+{
+  "slug": "employee-training-evidence-tracker",
+  "title": "Employee Training Evidence Tracker",
+  "category": "hr-recruiting",
+  "description": "Check role training records against required courses and expiry dates.",
+  "fields": {
+    "role": {
+      "label": "role",
+      "kind": "required",
+      "minimum": 0
+    },
+    "required_courses": {
+      "label": "required courses",
+      "kind": "list",
+      "minimum": 1
+    },
+    "completion_records": {
+      "label": "completion records",
+      "kind": "list",
+      "minimum": 1
+    },
+    "review_date": {
+      "label": "review date",
+      "kind": "date",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}
